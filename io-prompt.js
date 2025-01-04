@@ -1,4 +1,4 @@
-//IO - entrada e sa´da de dados/input e output 
+//IO - entrada e saida de dados/input e output 
 
 
 const rl = require('readline') //requerer uma biblioteca
