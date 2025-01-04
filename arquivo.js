@@ -5,11 +5,12 @@ const path  = require('node:path')
 const fs = require('node:fs')
 
 const filePath = path.join(process.cwd(), 'estudo-de-node','texto.txt' )
+
 console.log(filePath)
 
 fs.readFile(filePath, {}, (erro, dados) => {
     if(erro){
-        console.log(`Erro na leitura do arquivo no caminho ${filePath}`)
+        console.error(`Erro na leitura do arquivo no caminho ${filePath}`) // ele determina erro na leitura e na onde possui o erro 
         return
     }
     const texto = dados.toString()
